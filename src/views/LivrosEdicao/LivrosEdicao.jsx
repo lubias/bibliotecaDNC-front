@@ -12,7 +12,6 @@ const LivrosEdicao = () => {
 
   async function getLivro(){
     const {data} = await LivrosService.getLivro(livroId);
-    console.log(data);
     setLivro(data.resposta);
   }
 
